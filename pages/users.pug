@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title User List
+        link(rel="stylesheet" href="/styles.css")
+    body
+        h1 User List
+        table
+            thead
+                tr
+                    th ID
+                    th Name
+            tbody
+                for user in users
+                    tr
+                        td= user.id
+                        td= user.name
